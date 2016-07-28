@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+
+
+    <% @drivets.each do |x| %>
+      <div class="col-md-6">
+          <div class="well">
+            <%= x.message %><br>
+            <em><%= link_to x.user.username, profile_path(x.user.id) %></em>
+          </div>
+      </div>
+    <% end %>
+    <br>

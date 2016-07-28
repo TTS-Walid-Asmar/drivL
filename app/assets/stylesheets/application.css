@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ .box-shadow {
+   0 1px 3px rgba(50, 0, 0,.25);
+ }
+
+.form-control {
+  width: 70%;
+}
+
+@grid-float-breakpoint = 500px;
+
+body {
+  padding-top: 70px;
+  background: linear-gradient(320deg,#66717E,#D4F2DB 80%) fixed;
+
+}
+.container {
+max-width: 950px;
+ }
+.navbar {
+  min-height: 50px;
+  margin-bottom: 20px;
+
+}
+.collapse {
+  display: none;
+}
+.navbar-collapse:after {
+  clear: both;
+}
+.navbar-inverse {
+  background-image: linear-gradient(0.1deg,#131515,#383B53 100%);
+  filter: none;
+  border: 1px solid #131515;
+
+}
+.navbar-fixed-top {
+  top: 0;
+  position: fixed;
+}
+  .navbar-inverse .navbar-brand {
+    color: #95B2B8;
+  }
+
+  .navbar-inverse .navbar-nav>li>a  {
+    color: #D4E09B;
+  }
+
+  .cant-see-me  {
+    display: none;
+  }
+  .btn-default {
+    background: linear-gradient(to bottom,#D4F2DB,#A2A392 100%);
+  }
+.panel-dark {
+  background: linear-gradient(330deg,#131515,#383B53 40%);
+  color: #D4E09B;
+}
+
+.panel-drivet {
+  background: linear-gradient(300deg,#383B53,#D4F2DB 200%);
+}
+
+.well {
+  color: #131515;
+}
+/*#3C3C3C
+#98CBB4
+#B5FED9
+#A2A392
+#9A998C
+#D4E09B
+#000501
+#4B3B40
+
+#95B2B8
+
+
+#DE1A1A
+#131515
+
+#383B53
+
+#66717E
+
+#D4F2DB
+
+#CEF7A0*/

@@ -1,0 +1,38 @@
+
+<%= form_for(@drivet) do |f| %>
+
+  <% if @drivet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@drivet.errors.count, "error") %> prohibited this drivet from being saved:</h2>
+
+      <ul>
+        <% @drivet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+     <div class="panel panel-dark">
+      <div class="panel-heading">
+        <h2 align="center">drivLs are wasteful and selfish</h2>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <%= f.label "write a drivL" %><br>
+          <%= f.text_area :message, class:"form-control", rows: 5 %>
+        </div>
+        <div class="cant-see-me">
+          <%= f.number_field :user_id, value: current_user.id %>
+        </div>
+        <div class="action-group">
+          <%= f.submit "drivL", class:"btn btn-default"%>
+        </div>
+      </div>
+     </div>
+    </div>
+   </div>
+ </div>
+<% end %>
